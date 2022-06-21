@@ -1,0 +1,28 @@
+.Notifications {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+
+.Notifications__header {
+    width: 100%;
+    padding-top: 5px;
+
+    button {
+        margin-right: auto;
+        border: none;
+        background: transparent;
+        white-space: nowrap;
+        color: #1977f3;
+        cursor: pointer;
+        float: right;
+        margin-right: 10px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

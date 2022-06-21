@@ -1,0 +1,37 @@
+.Home__container {
+    width: 100%;
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+
+    .Home {
+        width: 100%;
+        max-width: 1500px;
+        margin: 0 auto;
+        height: 100%;
+        background: #F0F2F5;
+        position: relative;
+
+        .Timeline__container {
+            position: fixed;
+            top: 60px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 5;
+            display: flex;
+            justify-content: center;
+            overflow-y: auto;
+
+            .Timeline {
+                padding-top: 20px;
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 500px;
+                margin-left: 10px;
+
+            }
+        }
+    }
+}

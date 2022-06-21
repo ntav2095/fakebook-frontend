@@ -1,0 +1,19 @@
+.PostShow {
+    height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    overflow-y: auto;
+    background: #F0F2F5;
+
+    .PostShow__post {
+
+        width: 500px;
+        padding: 10px;
+        margin: 0 auto;
+        border-radius: 10px;
+        background: white;
+        box-shadow: 0 5px 10px -7px rgba(0, 0, 0, 0.75);
+    }
+
+
+}

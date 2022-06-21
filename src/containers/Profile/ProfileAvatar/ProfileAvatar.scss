@@ -1,0 +1,64 @@
+.Profile__avatar {
+    position: relative;
+
+    .avatarContainer {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid white;
+        cursor: pointer;
+        margin-bottom: 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+    .Avatar__menu,
+    .confirmMenu {
+        position: absolute;
+        top: calc(100% - 20px);
+        background: white;
+        box-shadow: 0 5px 15px -7px rgba(0, 0, 0, 0.75);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        z-index: 5;
+        cursor: pointer;
+
+        button,
+        label {
+            border: none;
+            outline: none;
+            background: white;
+            font-size: 15px;
+            padding: 5px 10px;
+            white-space: nowrap;
+            text-align: left;
+            cursor: pointer;
+
+            i {
+                margin-right: 5px;
+            }
+
+            &:hover {
+                background: rgb(246, 245, 245);
+            }
+        }
+    }
+
+
+}
+
+#avatarInput {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}

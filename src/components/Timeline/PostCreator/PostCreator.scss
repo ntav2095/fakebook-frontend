@@ -1,0 +1,35 @@
+.PostCreator {
+    width: 500px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 15px -7px rgba(0, 0, 0, 0.75);
+
+    .PostCreator__inputBtn {
+        background: rgb(236, 240, 241);
+        height: 40px;
+        flex: 1;
+        margin-left: 10px;
+        border-radius: 999px;
+        cursor: pointer;
+
+        &:hover {
+            background: rgb(224, 232, 234);
+
+        }
+
+        p {
+            text-align: left;
+            margin-left: 15px;
+            color: #8f9498;
+            line-height: 40px;
+        }
+    }
+
+}

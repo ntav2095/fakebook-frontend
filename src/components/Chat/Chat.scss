@@ -1,0 +1,27 @@
+.chatBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: rgb(255 255 255);
+    position: fixed;
+    bottom: 20px;
+    /* left: 20px; */
+    right: 20px;
+    font-weight: 700;
+    color: rgb(90 90 90);
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 999;
+    box-shadow: 0 3px 10px -5px rgb(0 0 0 / 75%);
+
+    &:active {
+        background: rgb(224, 224, 224);
+    }
+
+    i {
+        margin-left: 2px;
+    }
+}

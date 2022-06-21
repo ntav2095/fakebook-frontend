@@ -1,0 +1,34 @@
+
+
+import useAuth from "../../../Auth/useAuth"
+
+
+function PostOption({ post }) {
+    const { auth } = useAuth()
+
+    return (
+        <div className="PostOption">
+            {
+                auth.email === post.email &&
+                <div ref={optionsBtnRef} onClick={() => setShowOptions(!showOptions)} className={`Post_options__btn ${showOptions ? "active" : ""}`}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    {
+                        showOptions &&
+                        <div ref={postOptionsRef} className="Post_options">
+                            <RowItem
+                                leftIcon={<i className="fa fa-trash" />}
+                                text="Delete post"
+                                onClick={() => deletePost(post.id)}
+                            />
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    )
+}
+
+// export default PostOption

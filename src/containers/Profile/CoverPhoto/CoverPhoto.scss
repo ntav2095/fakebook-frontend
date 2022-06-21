@@ -1,0 +1,94 @@
+.CoverPhoto {
+    width: 100%;
+    height: 300px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    position: relative;
+
+    .verifyChangePhoto {
+        background: rgba(0, 0, 0, 0.849);
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        button {
+            margin: 0 5px;
+            padding: 3px 5px;
+            border: none;
+            border-radius: 2px;
+            min-width: 60px;
+            cursor: pointer;
+
+            &:first-of-type {
+                background: rgb(255, 68, 68);
+                color: white;
+            }
+        }
+    }
+
+    #coverPhotoInput {
+        opacity: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .CoverPhoto__btn {
+        padding: 5px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background: #F2F2F2;
+        cursor: pointer;
+        box-shadow: 0 2px 5px -5px rgba(0, 0, 0, 0.75);
+        z-index: 10;
+
+        &:hover {
+            background: #e8e8e8;
+
+        }
+
+        .CoverPhoto__menu {
+            position: absolute;
+            top: calc(100% + 1px);
+            list-style-type: none;
+            z-index: 99999;
+            background: white;
+            white-space: nowrap;
+            min-width: 200px;
+            right: 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px -7px rgba(0, 0, 0, 0.75);
+            padding: 2px;
+            cursor: pointer;
+
+            li {
+                padding: 5px 20px;
+                text-align: left;
+
+                &:hover {
+                    background: rgb(241, 241, 241);
+                }
+
+                i,
+                span {
+                    cursor: pointer;
+
+                }
+            }
+        }
+    }
+}

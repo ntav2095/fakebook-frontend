@@ -1,0 +1,45 @@
+.HeaderMenu {
+
+    &>footer {
+        padding: 5px;
+
+        &>ul {
+            list-style-type: none;
+            display: flex;
+
+            &>li {
+                margin-right: 10px;
+
+                a {
+                    color: rgb(114, 114, 114);
+                    font-size: 14px;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &>div {
+            display: flex;
+
+            &>* {
+                color: rgb(114, 114, 114);
+                text-decoration: none;
+                font-size: 14px;
+                margin-right: 10px;
+
+
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+}

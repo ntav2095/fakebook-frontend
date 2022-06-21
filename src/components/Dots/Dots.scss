@@ -1,0 +1,38 @@
+.Dots {
+    border-radius: 50%;
+    cursor: pointer;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &:hover,
+    &.active {
+        background: #ececec;
+    }
+
+    span {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background: #7b7b7b;
+        border-radius: 50%;
+
+        &:nth-child(2) {
+            margin: 0 2px;
+        }
+    }
+
+}
+
+.Dots__children {
+    position: absolute;
+    top: calc(100% + 4px);
+    // left: 50%;
+    // transform: translateX(-50%);
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px -10px rgba(0, 0, 0, 0.75);
+}

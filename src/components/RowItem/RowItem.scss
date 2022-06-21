@@ -1,0 +1,51 @@
+.RowItem {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 7px;
+    // background-color: rgb(223, 223, 223);
+    color: white;
+    margin: 3px;
+    min-width: 250px;
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(226, 226, 226);
+    }
+
+    .leftIcon {
+        width: 40px;
+        height: 40px;
+        background-color: rgb(142, 53, 53);
+
+        i {
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+
+    .image {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .text {
+        flex: 1;
+        margin: 0 2px;
+        color: #000;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+}

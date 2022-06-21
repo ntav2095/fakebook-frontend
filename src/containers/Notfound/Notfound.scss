@@ -1,0 +1,33 @@
+.Notfound {
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+        width: 110px;
+    }
+
+    h6 {
+        font-size: 23px;
+        color: #464646;
+    }
+
+    p {
+        color: #4e4e4e;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        padding: 10px 20px;
+        background: #1278f3;
+        color: white;
+        font-weight: 600;
+        border-radius: 10px;
+        margin: 10px;
+    }
+}
