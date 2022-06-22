@@ -13,7 +13,7 @@ import PostInfo from './PostInfo'
 
 import './PostHeader.scss'
 
-const DELETE_API = "http://localhost:9999/api/post/delete/"
+const DELETE_API = `${process.env.REACT_APP_API_URL}/post/delete/`
 
 function PostHeader({ post, setPosts }) {
     const { auth } = useAuth()

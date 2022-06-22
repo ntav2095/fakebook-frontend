@@ -63,7 +63,7 @@ function PostLightBox({ setShowLightBox, setPosts }) {
         const addNewPost = async () => {
             try {
                 const response = await axios.post(
-                    "http://localhost:9999/api/post/add",
+                    `${process.env.REACT_APP_API_URL}/post/add`,
                     formData,
                     {
                         headers: {

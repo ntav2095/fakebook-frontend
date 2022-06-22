@@ -21,7 +21,7 @@ function ChatBox() {
     useEffect(() => {
         const getChat = async () => {
             try {
-                const res = await axios.post("https://localhost:9999/api/chat/get-chat", JSON.stringify({ receiver: receiver.email }),
+                const res = await axios.post(`${process.env.REACT_APP_API_URL}/chat/get-chat`, JSON.stringify({ receiver: receiver.email }),
                     {
 
                         headers: {
@@ -50,7 +50,7 @@ function ChatBox() {
         e.preventDefault()
         const msgItem = { sender: auth.email, name: auth.name, avatar: auth.avatar, content: msgInput, time: Date.now() }
         const res = await axios.post(
-            "http://localhost:9999/api/chat/send-message",
+            `${process.env.REACT_APP_API_URL}/chat/send-message`,
             JSON.stringify({ msgItem: msgItem, receiver: receiver.email }),
             {
                 headers: {

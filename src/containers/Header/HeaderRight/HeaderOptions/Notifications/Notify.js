@@ -17,7 +17,7 @@ function Notify({ notify, setIsShow }) {
         if (notify.seen) return
         try {
             const response = await axios.put(
-                "http://localhost:9999/api/notifications/update-seen",
+                `${process.env.REACT_APP_API_URL}/notifications/update-seen`,
                 JSON.stringify({ id: id }),
                 {
                     headers: {

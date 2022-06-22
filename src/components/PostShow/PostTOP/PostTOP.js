@@ -29,7 +29,7 @@ function PostTOP({ post, setDeleted, setPost }) {
     const deletePost = async (id) => {
         try {
             const response = await axios.post(
-                `http://localhost:9999/api/post/delete/${id}`,
+                `${process.env.REACT_APP_API_URL}/post/delete/${id}`,
                 JSON.stringify({ hello: "hihi" }),
                 AXIOS_OPTION
             )

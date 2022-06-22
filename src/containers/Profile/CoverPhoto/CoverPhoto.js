@@ -8,8 +8,8 @@ import RowItem from '../../../components/RowItem/RowItem'
 
 import './CoverPhoto.scss'
 
-const CHANGE_COVER_PHOTO_API = "http://localhost:9999/api/user/change-cover-photo"
-const REMOVE_COVER_PHOTO_API = "http://localhost:9999/api/user/remove-cover-photo"
+const CHANGE_COVER_PHOTO_API = `${process.env.REACT_APP_API_URL}/user/change-cover-photo`
+const REMOVE_COVER_PHOTO_API = `${process.env.REACT_APP_API_URL}/user/remove-cover-photo`
 
 function CoverPhoto({ user, setUser }) {
     const [isShowMenu, setIsShowMenu] = useState(false)

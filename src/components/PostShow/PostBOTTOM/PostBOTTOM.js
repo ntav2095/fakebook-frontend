@@ -9,7 +9,7 @@ import Avatar from '../../Common/Avatar/Avatar'
 import './PostBOTTOM.scss'
 
 
-const COMMENT_API = "http://localhost:9999/api/post/comment"
+const COMMENT_API = `${process.env.REACT_APP_API_URL}/post/comment`
 
 
 function PostBOTTOM({ post, setPost, isShowCmt }) {

@@ -10,7 +10,7 @@ import PostBOTTOM from './PostBOTTOM/PostBOTTOM'
 
 import './PostShow.scss'
 
-const POST_API = "http://localhost:9999/api/post/get-one/"
+const POST_API = `${process.env.REACT_APP_API_URL}/post/get-one/`
 
 
 function PostShow() {

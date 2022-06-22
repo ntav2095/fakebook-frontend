@@ -12,7 +12,7 @@ function ProfileTop({ user, setUser, setPosts }) {
     const handleFriendRequest = async (type) => {
         try {
             const response = await axios.post(
-                "http://localhost:9999/api/user/friend-request",
+                `${process.env.REACT_APP_API_URL}/user/friend-request`,
                 JSON.stringify({ authEmail: auth.email, recEmail: user.email, type: type }),
                 {
                     headers: {

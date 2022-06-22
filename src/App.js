@@ -8,7 +8,7 @@ import Home from './containers/Home/Home'
 import Profile from './containers/Profile/Profile'
 import SpecifiedPost from './containers/SpecifiedPost/SpecifiedPost'
 
-import './App.css';
+import './App.css'
 
 function App() {
 

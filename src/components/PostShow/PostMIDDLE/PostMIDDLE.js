@@ -7,7 +7,7 @@ import ReactStats from './ReactStats/ReactStats'
 
 import './PostMIDDLE.scss'
 
-const LIKE_API = "http://localhost:9999/api/post/like"
+const LIKE_API = `${process.env.REACT_APP_API_URL}/post/like`
 
 function PostMIDDLE({ post, setIsShowCmt, isShowCmt }) {
     const { auth } = useAuth()

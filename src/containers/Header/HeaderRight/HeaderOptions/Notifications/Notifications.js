@@ -14,7 +14,7 @@ function Notifications({ setIsShow }) {
 
     const deleteNotifications = async () => {
         try {
-            const url = "http://localhost:9999/api/notifications/delete-all"
+            const url = `${process.env.REACT_APP_API_URL}/notifications/delete-all`
             const res = await axios.post(
                 url, JSON.stringify("hihi"),
                 {

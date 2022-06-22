@@ -12,8 +12,8 @@ import PostComment from "../../../components/Post/PostComment/PostComment"
 import ReactStats from "../../../components/Post/ReactStats/ReactStats"
 // import PostOption from "./PostOption"
 
-const DELETE_API = "http://localhost:9999/api/post/delete/"
-const LIKE_API = "http://localhost:9999/api/post/like"
+const DELETE_API = `${process.env.REACT_APP_API_URL}/post/delete/`
+const LIKE_API = `${process.env.REACT_APP_API_URL}/post/like`
 
 
 function PostContent({ post, setPost }) {

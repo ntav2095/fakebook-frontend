@@ -8,7 +8,7 @@ import HeaderRightUserInfo from './HeaderRightUserInfo'
 
 import './HeaderRight.scss'
 
-const UPADTE_NTF_API = "http://localhost:9999/api/notifications/update-seen"
+const UPADTE_NTF_API = `${process.env.REACT_APP_API_URL}/notifications/update-seen`
 
 function HeaderRight() {
     const { auth } = useAuth()

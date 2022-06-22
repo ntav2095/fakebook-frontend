@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import useAuth from '../../../Auth/useAuth'
 
 
-const LIKE_API = "http://localhost:9999/api/post/like"
+const LIKE_API = `${process.env.REACT_APP_API_URL}/post/like`
 
 function PostActions({ post, setPosts, setPost }) {
     const [like, setLike] = useState(false)

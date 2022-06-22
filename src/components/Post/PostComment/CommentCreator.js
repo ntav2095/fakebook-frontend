@@ -5,7 +5,7 @@ import useAuth from "../../../Auth/useAuth"
 
 import Avatar from '../../Avatar/Avatar'
 
-const COMMENT_API = "http://localhost:9999/api/post/comment"
+const COMMENT_API = `${process.env.REACT_APP_API_URL}/post/comment`
 
 function CommentCreator({ post, setPosts, setPost }) {
     const [cmtInput, setCmtInput] = useState('')
