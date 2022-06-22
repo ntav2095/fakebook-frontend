@@ -57,7 +57,9 @@ function CoverPhoto({ user, setUser }) {
                 const res = await axios.post(CHANGE_COVER_PHOTO_API, formData, HEADERS)
 
                 if (res?.data?.ok) {
-                    setAuth(prev => ({ ...prev, coverPhoto: res.data.coverPhoto }))
+                    const newAuth = { ...auth, coverPhoto: res.data.coverPhoto }
+                    setAuth(newAuth)
+                    localStorage.setItem("auth", JSON.stringify(newAuth))
                     setUser(prev => ({ ...prev, coverPhoto: res.data.coverPhoto }))
                     handleCancel()
                 } else {
@@ -71,7 +73,6 @@ function CoverPhoto({ user, setUser }) {
     }
 
     const handleRemoveCoverPhoto = () => {
-        console.log("handleRemoveCoverPhoto")
         const postItem = {
             postItem: {
                 userID: auth.id, text: `${auth.name} removed cover photo`, time: Date.now(),
@@ -97,11 +98,6 @@ function CoverPhoto({ user, setUser }) {
         addNewPost()
     }
     const coverBtnRef = useRef()
-
-
-    useEffect(() => {
-        localStorage.setItem("auth", JSON.stringify(auth))
-    }, [auth])
 
     useEffect(() => {
         const closeCoverPhotoMenu = (e) => {
