@@ -5,9 +5,9 @@ import useAuth from '../../../Auth/useAuth'
 
 import './ProfileAvatar.scss'
 
-const CHANGE_AVATAR = `${process.env.REACT_APP_API_URL}/api/user/change-avatar`
-const REMOVE_AVATAR = `${process.env.REACT_APP_API_URL}/api/user/remove-avatar`
-const NO_AVATAR = "asset/no-avatar.png"
+const CHANGE_AVATAR = `${process.env.REACT_APP_API_URL}/user/change-avatar`
+const REMOVE_AVATAR = `${process.env.REACT_APP_API_URL}/user/remove-avatar`
+const NO_AVATAR = "https://res.cloudinary.com/dqz4j2zua/image/upload/v1655901067/hbltcwn8jflad4upsxxz.png"
 
 function ProfileAvatar({ user, setUser, setPosts }) {
     const [avatarInput, setAvatarInput] = useState(null)
