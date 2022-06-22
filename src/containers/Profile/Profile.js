@@ -39,7 +39,6 @@ function Profile() {
     useEffect(() => {
         let isUnder = false
         const scrollListener = () => {
-            console.log("from Profile")
             if (!isUnder && profileRef.current.scrollTop > (profileRef.current.scrollHeight - profileRef.current.clientHeight) * 0.9) {
                 isUnder = true
                 setOldScrollTop((profileRef.current.scrollHeight - profileRef.current.clientHeight) * 0.9)

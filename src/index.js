@@ -12,7 +12,7 @@ root.render(
   <AuthProvider>
     <ChatProvider>
       <Router>
-        <App />
+        <App path="*" />
       </Router>
     </ChatProvider>
   </AuthProvider>
