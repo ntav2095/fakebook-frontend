@@ -93,7 +93,7 @@ function PostLightBox({ setShowLightBox, setPosts }) {
 
     return (
         <div className="PostLightBox">
-            <div ref={postLightBoxRef} className="PostLightBox__main">
+            <div ref={postLightBoxRef} className="PostLightBox__main boxShadow">
                 <h6 className="PostLightBox__header">Create Post</h6>
 
                 <div className="PostLightBox__userInfo">

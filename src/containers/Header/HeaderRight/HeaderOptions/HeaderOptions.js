@@ -33,7 +33,7 @@ function HeaderOptions({ isShow, setIsShow, messengerRef, notificationsRef, frie
     return (<>
         {
             isShow !== "hide" &&
-            <div ref={headerOptionRef} className="HeaderOptions">
+            <div ref={headerOptionRef} className="HeaderOptions boxShadow">
                 {isShow === "notifications" && <Notifications setIsShow={setIsShow} />}
                 {isShow === "menu" && <HeaderMenu setIsShow={setIsShow} />}
                 {isShow === "friendRequest" && <FriendRequest setIsShow={setIsShow} />}

@@ -11,7 +11,7 @@ function Header() {
     const { email, pid } = useParams()
     return (<>
 
-        <div className="Header">
+        <div className="Header boxShadow">
             <HeaderLeft />
             <HeaderRight />
         </div>

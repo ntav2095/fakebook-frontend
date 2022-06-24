@@ -23,7 +23,7 @@ function PostCreator({ setPosts }) {
 
 
     return (
-        <div className="PostCreator">
+        <div className="PostCreator boxShadow">
 
             <Link to={`/${auth.email}`}>
                 <Avatar

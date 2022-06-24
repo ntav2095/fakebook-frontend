@@ -56,7 +56,7 @@ function PostShow() {
         {
             !notFound && post ?
                 <div className="PostShow">
-                    <div className="PostShow__post">
+                    <div className="PostShow__post boxShadow">
                         <PostTOP post={post} setPost={setPost} setDeleted={setDeleted} />
                         <PostMIDDLE post={post} setPost={setPost} isShowCmt={isShowCmt} setIsShowCmt={setIsShowCmt} />
                         <PostBOTTOM post={post} setPost={setPost} isShowCmt={isShowCmt} />

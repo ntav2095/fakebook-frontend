@@ -8,7 +8,7 @@ function Post({ post, setPosts }) {
 
 
     return (
-        <div className="Post">
+        <div className="Post boxShadow">
             <PostHeader post={post} setPosts={setPosts} />
             <PostMIDDLE post={post} setPosts={setPosts} />
             <PostComment post={post} setPosts={setPosts} />

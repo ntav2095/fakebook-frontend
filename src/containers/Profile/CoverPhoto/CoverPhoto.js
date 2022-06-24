@@ -121,18 +121,18 @@ function CoverPhoto({ user, setUser }) {
                     <button onClick={() => submitChangePhoto()}>Save</button>
                 </div>
             }
-
+            {console.log("from coverphoto: ", user)}
             {user.email === auth.email &&
                 <div
                     ref={coverBtnRef}
                     onClick={() => setIsShowMenu(prev => !prev)}
-                    className="CoverPhoto__btn"
+                    className="CoverPhoto__btn boxShadow"
                 >
                     <i className="fa fa-camera"></i>
                     <span>  Add cover photo</span>
 
                     {isShowMenu &&
-                        <ul ref={coverPhotoRef} className="CoverPhoto__menu">
+                        <ul ref={coverPhotoRef} className="CoverPhoto__menu boxShadow">
                             <li><i className="fa fa-images"></i> <span>Select photo</span></li>
                             <li onClick={(e) => e.stopPropagation()}><label htmlFor="coverPhotoInput"><i className="fa fa-upload"></i> <span>Upload photo</span></label></li>
                             {user.coverPhoto && <li onClick={(e) => { e.stopPropagation(); handleRemoveCoverPhoto(); }}><i className="fa fa-trash-alt"></i><span>Remove photo</span></li>}

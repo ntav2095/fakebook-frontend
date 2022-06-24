@@ -26,7 +26,7 @@ function Dots(props) {
     }, [show])
 
     return (
-        <div {...other} className="Dots" onClick={() => setShow(prev => !prev)}>
+        <div {...other} className="Dots boxShadow" onClick={() => setShow(prev => !prev)}>
             <span></span>
             <span></span>
             <span></span>

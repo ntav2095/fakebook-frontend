@@ -75,8 +75,8 @@ function ChatBox() {
     }
 
     return (
-        <div className="ChatBox">
-            <div className="ChatBox__top">
+        <div className="ChatBox boxShadow">
+            <div className="ChatBox__top boxShadow">
                 <div className="ChatBox__top__left">
                     {receiver && <><Avatar image={receiver.avatar} size="40px" />
                         <p>{receiver.name}</p></>}
@@ -91,8 +91,6 @@ function ChatBox() {
 
                 <button className="ChatBox__closeBtn" onClick={() => { setShowChat(false); setReceiver(null) }}><i className="fa fa-times"></i></button>
             </div>
-
-
 
             <ul className="ChatBox__middle">
                 {

@@ -15,7 +15,7 @@ function About({ user }) {
 
 
         <div ref={aboutRef} className="About" style={aboutStyle}>
-            <div className="intro">
+            <div className="intro ">
                 <p>Name: <span>{user.name}</span></p>
                 <p>Email: <span>{user.email}</span></p>
                 <p>Gender: </p>
@@ -25,7 +25,7 @@ function About({ user }) {
 
             </div>
 
-            <div className="friends">
+            <div className="friends boxShadow">
                 {user?.friends.map((item, index) => (
                     <div key={index} className="friend">
                         <Link to={`/${item.email}`} className="friendAvatar">
