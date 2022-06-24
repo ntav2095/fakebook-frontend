@@ -11,9 +11,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AuthProvider>
     <ChatProvider>
-      <Router>
-        <App path="*" />
-      </Router>
+      <GlobalStyles>
+        <Router>
+          <App path="*" />
+        </Router>
+      </GlobalStyles>
     </ChatProvider>
   </AuthProvider>
 );
